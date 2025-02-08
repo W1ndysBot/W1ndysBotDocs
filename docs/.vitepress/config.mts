@@ -8,7 +8,7 @@ export default defineConfig({
   lastUpdated: true,
   title: "W1ndysBot",
   description: "W1ndysBot 的部署和说明文档",
-  head: [["link", { rel: "icon", href: "/logo.jpg" }]],
+  head: [["link", { rel: "icon", href: "./logo.jpg" }]],
   appearance: true,
   // 配置sitemap
   sitemap: {

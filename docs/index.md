@@ -6,7 +6,7 @@ layout: home
 # 首页英雄区域配置
 hero:
   image:
-    src: /logo.jpg
+    src: ./logo.jpg
     alt: "W1ndysBot"
   # 主标题
   name: "W1ndysBot"
