@@ -12,6 +12,12 @@ export default defineConfig({
   sitemap: {
     hostname: "https://bot.w1ndys.top",
   },
+  markdown: {
+    lineNumbers: true,
+    image: {
+      lazyLoading: true,
+    },
+  },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: "/logo.jpg",
