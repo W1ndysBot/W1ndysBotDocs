@@ -1,4 +1,5 @@
 import { defineConfig } from "vitepress";
+import { nav } from "./configs";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -43,17 +44,7 @@ export default defineConfig({
       prev: "上一页",
       next: "下一页",
     },
-    nav: [
-      { text: "首页", link: "/" },
-      { text: "示例", 
-        items: [
-          { text: "Markdown 示例", link: "/markdown-examples" },
-          { text: "API 示例", link: "/api-examples" },
-        ],
-      },
-      { text: "VitePress", link: "https://vitepress.dev/" },
-    ],
-
+    nav,
     sidebar: [
       {
         text: "示例",
