@@ -3,7 +3,7 @@ import { nav } from "./configs";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  base: "https://w1ndysbot.github.io/W1ndysBotDocs",
+  base: "/W1ndysBotDocs",
   lang: "zh-CN",
   lastUpdated: true,
   title: "W1ndysBot",
