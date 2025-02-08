@@ -22,7 +22,7 @@ export default defineConfig({
   },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    logo: "/logo.jpg",
+    logo: "./logo.jpg",
     darkModeSwitchLabel: "切换主题",
     sidebarMenuLabel: "目录",
     returnToTopLabel: "返回顶部",
