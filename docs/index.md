@@ -10,7 +10,7 @@ hero:
   # 副标题
   text: "部署和使用文档"
   # 标语
-  tagline: "一个基于Python和NapCat的QQ机器人框架"
+  tagline: "基于Python和NapCat的QQ机器人框架"
   # 操作按钮配置
   actions:
     # 主要按钮
