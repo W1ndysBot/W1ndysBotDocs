@@ -15,6 +15,7 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     logo: "/logo.jpg",
     darkModeSwitchLabel: "切换主题",
+    sidebarMenuLabel: "目录",
     nav: [
       { text: "首页", link: "/" },
       {
@@ -56,5 +57,9 @@ export default defineConfig({
       { icon: "github", link: "https://github.com/W1ndysBot/W1ndysBot" },
       { icon: "email", link: "mailto:w1ndys@outlook.com" },
     ],
+    footer: {
+      message: "Released under the MIT License.",
+      copyright: `Copyright © 2024-${new Date().getFullYear()} W1ndysBot`,
+    },
   },
 });
