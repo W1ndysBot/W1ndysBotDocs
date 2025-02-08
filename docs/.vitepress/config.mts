@@ -3,6 +3,7 @@ import { nav } from "./configs";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  base: "https://w1ndysbot.github.io/W1ndysBotDocs",
   lang: "zh-CN",
   lastUpdated: true,
   title: "W1ndysBot",
@@ -11,7 +12,7 @@ export default defineConfig({
   appearance: true,
   // 配置sitemap
   sitemap: {
-    hostname: "https://bot.w1ndys.top",
+    hostname: "https://w1ndysbot.github.io/W1ndysBotDocs",
   },
   markdown: {
     lineNumbers: true,
