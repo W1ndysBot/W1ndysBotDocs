@@ -5,6 +5,9 @@ layout: home
 
 # 首页英雄区域配置
 hero:
+  image:
+    src: /logo.jpg
+    alt: "W1ndysBot"
   # 主标题
   name: "W1ndysBot"
   # 副标题
@@ -19,11 +22,11 @@ hero:
       link: /markdown-examples
     # 次要按钮
     - theme: alt
-      text: 开始使用
-      link: /api-examples
+      text: GitHub
+      link: https://github.com/W1ndysBot
     - theme: sponsor
-      text: 赞助
-      link: https://github.com/sponsors/W1ndysBot
+      text: 作者
+      link: https://w1ndys.top
 
 # 特性介绍区域
 features:
