@@ -48,10 +48,12 @@ jobs:
         run: |
           pnpm docs:build
           touch docs/.vitepress/dist/.nojekyll
+          ls -la docs/.vitepress/dist  # 添加调试命令，检查构建输出
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: docs/.vitepress/dist
+          name: github-pages  # 明确指定 artifact 名称
 
   # 部署工作
   deploy:
