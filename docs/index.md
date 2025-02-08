@@ -19,7 +19,7 @@ hero:
     # 主要按钮
     - theme: brand
       text: 开始使用
-      link: /markdown-examples
+      link: ./markdown-examples
     # 次要按钮
     - theme: alt
       text: GitHub
