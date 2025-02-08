@@ -9,4 +9,4 @@ fi
 
 # 运行文档开发服务器
 echo "启动文档开发服务器..."
-pnpm run docs:dev 
+pnpm run docs:dev --host 0.0.0.0
