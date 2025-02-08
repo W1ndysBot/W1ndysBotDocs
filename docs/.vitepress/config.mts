@@ -3,6 +3,7 @@ import { defineConfig } from "vitepress";
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   lang: "zh-CN",
+  lastUpdated: true,
   title: "W1ndysBot",
   description: "W1ndysBot 的部署和说明文档",
   head: [["link", { rel: "icon", href: "/logo.jpg" }]],
@@ -16,6 +17,26 @@ export default defineConfig({
     logo: "/logo.jpg",
     darkModeSwitchLabel: "切换主题",
     sidebarMenuLabel: "目录",
+    returnToTopLabel: "返回顶部",
+    outline: {
+      level: "deep",
+      label: "当前页面目录",
+    },
+    editLink: {
+      pattern: "https://github.com/W1ndysBot/W1ndysBot/edit/main/docs/:path",
+      text: "编辑此页面",
+    },
+    lastUpdated: {
+      text: "最后更新于",
+      formatOptions: {
+        dateStyle: "full",
+        timeStyle: "full",
+      },
+    },
+    docFooter: {
+      prev: "上一页",
+      next: "下一页",
+    },
     nav: [
       { text: "首页", link: "/" },
       {
