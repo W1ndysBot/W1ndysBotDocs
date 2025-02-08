@@ -1,10 +1,6 @@
-# 构建 VitePress 站点并将其部署到 GitHub Pages 的示例工作流程
-#
 name: Deploy VitePress site to Pages
 
 on:
-  # 在针对 `main` 分支的推送上运行。如果你
-  # 使用 `master` 分支作为默认分支，请将其更改为 `master`
   push:
     branches: [main]
 
@@ -39,6 +35,18 @@ jobs:
         with:
           node-version: 18
           cache: pnpm
+
+      # 缓存 VitePress 构建产物
+      - name: Cache VitePress
+        uses: actions/cache@v3
+        with:
+          path: |
+            docs/.vitepress/cache
+            docs/.vitepress/.temp
+          key: vitepress-cache-${{ hashFiles('docs/**/*.md') }}-${{ hashFiles('docs/.vitepress/config.ts') }}
+          restore-keys: |
+            vitepress-cache-
+
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Install dependencies
