@@ -8,7 +8,7 @@ export default defineConfig({
   lastUpdated: true,
   title: "W1ndysBot",
   description: "W1ndysBot 的部署和说明文档",
-  head: [["link", { rel: "icon", href: "./logo.jpg" }]],
+  head: [["link", { rel: "icon", href: "./logo.png" }]],
   appearance: true,
   // 配置sitemap
   sitemap: {
@@ -22,7 +22,7 @@ export default defineConfig({
   },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    logo: "./logo.jpg",
+    logo: "./logo.png",
     darkModeSwitchLabel: "切换主题",
     sidebarMenuLabel: "目录",
     returnToTopLabel: "返回顶部",
